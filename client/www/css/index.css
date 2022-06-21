@@ -1,0 +1,12 @@
+/* Removes white background from body */
+.content {
+  background: none;
+  text-align: center;
+}
+
+/* Background image for homepage and form data */
+#home {
+  background-image: url("../img/code.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}

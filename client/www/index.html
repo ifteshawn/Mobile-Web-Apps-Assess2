@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>COIT20269 - Assessment 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jqm.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jqm.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+    <!-- Start SPA page HOME ----------------------->
+    <div data-role="page" id="home">
+        <!-- Header Section  -->
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>SCANNER v1.0</h1>
+            <a href="#popupMenu" data-rel="popup" data-transition="pop" class="ui-btn-right">Admin</a>
+            <div data-role="popup" id="popupMenu" data-theme="a">
+                <ul data-role="listview" data-inset="true" data-icon="false">
+                    <li><a href="#" id="deleteLocalData">Delete Local Data</a></li>
+                    <li><a href="#" id="deleteCloudData">Delete Cloud Data</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- content Section -->
+        <div data-role="content" data-theme="a" class="content">
+            <button class="ui-btn ui-corner-all ui-shadow" id="scan">SCAN</button>
+            <button class="ui-btn ui-corner-all ui-shadow" id="localDataLink">DISPLAY LOCAL DATA</button>
+            <button class="ui-btn ui-corner-all ui-shadow" id="uploadLink">UPLOAD TO CLOUD</button>
+            <button class="ui-btn ui-corner-all ui-shadow" id="cloudDataLink">DISPLAY CLOUD DATA</button>
+        </div>
+
+        <!-- Footer section  -->
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h1>Running cordova-browser @ 11.0.0</h1>
+        </div>
+    </div>
+
+    <!--  END SPA PAGE HOME --------------------------------------------- -->    
+
+
+    <!-- START SPA LOCAL DATA-->
+    <div data-role="page" id="localDataPage">
+        <!-- Header Section  -->
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="#home" data-role="button" data-icon="home" class="ui-btn-left">Home</a>
+            <h1>LOCAL DATA</h1>
+
+        </div>
+
+        <!-- content Section -->
+        <div data-role="content" data-theme="a" class="content">
+            <h1>Local Data</h1>
+            <table data-role="table" id="localDataTable" class="ui-responsive">
+                <thead>
+                    <tr>
+                        <th>Character Image</th>
+                        <th>Character ID</th>
+                        <th>Name</th>
+                        <th>Birthday</th>
+                        <th>Occupation</th>
+                        <th>Nickname</th>
+                        <th>Portrayed</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody id="localDataToAdd">
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- Footer section  -->
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h1>Running cordova-browser @ 11.0.0</h1>
+        </div>
+    </div>
+
+    <!-- END SPA LOCAL DATA----------------------------------------->
+
+
+    <!-- START SPA CLOUD DATA--->
+    <div data-role="page" id="cloudDataPage">
+        <!-- Header Section  -->
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="#home" data-role="button" data-icon="home" class="ui-btn-left">Home</a>
+            <h1>CLOUD DATA</h1>
+
+        </div>
+
+        <!-- content Section -->
+        <div data-role="content" data-theme="a" class="content">
+            <h1>Cloud Data</h1>
+            <table data-role="table" id="cloudDataTable" class="ui-responsive">
+                <thead>
+                    <tr>
+                        <th>Character Image</th>
+                        <th>Character ID</th>
+                        <th>Name</th>
+                        <th>Birthday</th>
+                        <th>Occupation</th>
+                        <th>Nickname</th>
+                        <th>Portrayed</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody id="cloudDataToAdd">
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- Footer section  -->
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h1>Running cordova-browser @ 11.0.0</h1>
+        </div>
+
+    </div>
+    <!-- END SPA CLOUD DATA---------------------------------------->
+
+
+    <script src="cordova.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+</body>
+
+</html>
